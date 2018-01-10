@@ -33,7 +33,7 @@ namespace InstaSharper.Examples
                 // create user session data and provide login details
                 var userSession = new UserSessionData
                 {
-                    UserName = "username",
+                    UserName = "user",
                     Password =  "password"
                 };
 

@@ -29,7 +29,7 @@ namespace InstaSharper.Examples.Samples
                 $"Logged in: username - {currentUser.Value.UserName}, full name - {currentUser.Value.FullName}");
 
             // get followers of user 'elonmusk'
-            var followers = await _instaApi.GetUserFollowersAsync("elonmusk", 
+            var followers = await _instaApi.GetUserFollowersAsync("elv1s42", 
                 PaginationParameters.MaxPagesToLoad(5)
                 .StartFromId("AQAC8w90POWyM7zMjHWmO9vsZNL_TuLp6FR506_C_y3fUAjlCclrIDI2RdSGvur5UjLrq4Cq7NJN8QUhHG-vpbT6pCLB5X9crDxBOHUEuNJ4fA"));
             Console.WriteLine($"Count of followers [elonmusk]:{followers.Value.Count}");

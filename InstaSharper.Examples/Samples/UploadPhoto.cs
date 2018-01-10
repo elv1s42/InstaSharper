@@ -21,7 +21,7 @@ namespace InstaSharper.Examples.Samples
             {
                 Height = 1080,
                 Width = 1080,
-                URI = new Uri(Path.GetFullPath(@"c:\someawesomepicture.jpg"), UriKind.Absolute).LocalPath
+                URI = new Uri(Path.GetFullPath(@"c:\_inst\1.jpg"), UriKind.Absolute).LocalPath
             };
             var result = await _instaApi.UploadPhotoAsync(mediaImage, "someawesomepicture");
             Console.WriteLine(result.Succeeded
